@@ -89,6 +89,7 @@ $(document).ready(function(){
   };
 
 function listing(thisCar){
+  // insert append function code here
 
 }
 
