@@ -132,6 +132,7 @@ $('.mainImg').append(
   + thisCar.supportImg31 + '" alt="' + thisCar.car + ' Image" class="' + thisCar.stock + 'MainImg31 mains" /><img src="'
   + thisCar.supportImg32 + '" alt="' + thisCar.car + ' Image" class="' + thisCar.stock + 'MainImg32 mains" /><img src="'
   + thisCar.supportImg33 + '" alt="' + thisCar.car + ' Image" class="' + thisCar.stock + 'MainImg33 mains" /><img src="'
+
   + thisCar.supportImg1 + '" alt="' + thisCar.car + ' Image 1" class="' + thisCar.stock + 'Sup1 supSize"/><img src="'
   + thisCar.supportImg2 + '" alt="' + thisCar.car + ' Image 2" class="' + thisCar.stock + 'Sup2 supSize" /><img src="'
   + thisCar.supportImg3 + '" alt="' + thisCar.car + ' Image 3" class="' + thisCar.stock + 'Sup3 supSize" /><img src="'
@@ -502,7 +503,7 @@ for (var i = 0; i < vehicleArray.length; i++) {
 }
 
 
-$('.mains').hide();
+// $('.mains').hide();
 
 for (var j = 0; j < supArray.length; j++) {
   $('.' + supArray[j]).hide();
