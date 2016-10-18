@@ -14,7 +14,8 @@ $(document).ready(function(){
     mpg,
     doors,
     trans,
-    mileage
+    mileage,
+    modelCode
     ){
     this.stock = stock;
     this.car = car;
@@ -29,6 +30,7 @@ $(document).ready(function(){
     this.doors = doors;
     this.engine = engine;
     this.mileage = mileage;
+    this.modelCode = modelCode;
   };
 
   function listing(thisCar){
@@ -43,7 +45,12 @@ $(document).ready(function(){
 
       thisCar.msrp + '</span></li><li class="center">Price<span class="pricing">&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;'+
 
-      thisCar.specialPrice + '</span></li><li><div class="imageContainer"><div class="imageArea"><img src="http://joethemovie.com/images/engineIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">Engine</span><br/>' + thisCar.engine + '</div><div class="imageArea"><img src="http://joethemovie.com/images/gearIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">Transmission</span><br/>' + thisCar.trans + '</div><div class="imageArea"><img src="http://joethemovie.com/images/gaugeIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">MPG</span><br/>' + thisCar.mpg + '</div><div class="imageArea"><img src="http://joethemovie.com/images/carFrontIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">Exterior Color</span><br/>' + thisCar.carColor + '</div><div class="imageArea"><img src="http://joethemovie.com/images/carSideIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">Doors</span><br/>' + thisCar.doors + '</div></div></li><li class="sectionTitle pricingSpacing">Trim</li><li">'+
+      thisCar.specialPrice + '</span></li><li><div class="imageContainer"><div class="imageArea"><img src="http://joethemovie.com/images/engineIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">Engine</span><br/>' +
+      thisCar.engine + '</div><div class="imageArea"><img src="http://joethemovie.com/images/gearIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">Transmission</span><br/>' +
+      thisCar.trans + '</div><div class="imageArea"><img src="http://joethemovie.com/images/gaugeIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">MPG</span><br/>' +
+      thisCar.mpg + '</div><div class="imageArea"><img src="http://joethemovie.com/images/carFrontIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">Exterior Color</span><br/>' +
+      thisCar.carColor + '</div><div class="imageArea"><img src="http://joethemovie.com/images/carSideIcon.svg" class="iconSizing"/></div><div class="imageInfo"><span class="sectionTitle">Doors</span><br/>' +
+      thisCar.doors + '</div></div></li><li class="sectionTitle pricingSpacing">Trim</li><li">'+
 
       thisCar.trim + '</li><li class="sectionTitle sectionSpacing">Color</li><li>'+
 
@@ -70,7 +77,8 @@ $(document).ready(function(){
     '18 city/24 hwy',
     '4',
     'Automatic CVT AWD',
-    '15,130'
+    '15,130',
+    ''
   );
   vehicleArray[1] = new Vehicle(
     'SUG2509',
@@ -84,21 +92,23 @@ $(document).ready(function(){
     '25 city/33 hwy',
     '4',
     'Automatic CVT',
-    '18,676'
+    '18,676',
+    ''
   );
   vehicleArray[2] = new Vehicle(
     'SUG2579',
     '2016 Subaru Outback 3.6R Limited',
     'Limited',
     'Tungsten',
-    'msrp'
+    'msrp',
     'specialPrice',
     "vehicleImages/SUG2579/SUG2579-2.JPG",
     '3.6R Boxer H6',
     '20 city/27 hwy',
     '4',
     'Automatic CVT',
-    '17,097'
+    '17,097',
+    ''
   );
   vehicleArray[3] = new Vehicle(
     'SUG2609',
@@ -112,7 +122,8 @@ $(document).ready(function(){
     '17 city, 23 hwy',
     '4',
     '6 Speed Manual',
-    '246'
+    '246',
+    ''
   );
   vehicleArray[4] = new Vehicle(
     'SUG2610',
@@ -126,7 +137,8 @@ $(document).ready(function(){
     '26 city/36 hwy',
     '4',
     'Automatic CVT',
-    '17,985'
+    '17,985',
+    ''
   );
   vehicleArray[5] = new Vehicle(
     'SUH0050',
@@ -140,7 +152,8 @@ $(document).ready(function(){
     '18 city/24 hwy',
     '4',
     '6 Speed Manual',
-    '0'
+    '0',
+    ''
   );
 
 
